@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeatherBeats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+        <div class="balloon-container">
+      <div class="balloon"></div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                  <div class="balloon-container"><div class="balloon"></div></div>
+<h1 class="text-center display-4 text-white">WeatherBeats</h1>
+<div class="form-group">
+    <label for="weatherInput" class="text-white">Weather</label>
+    <input type="text" class="form-control" id="weatherInput" placeholder="Enter city name" style="background-color: #87CEFA;">
+</div>
+                   <div class="text-center my-4">
+            <button type="button" class="btn btn-primary mx-2" id="playNextBtn">Play Next</button>
+            <button type="button" class="btn btn-danger mx-2" id="stopBtn">Stop Music</button>
+          </div>
+          <div class="card text-center mt-5" id="weatherCard">
+            <div class="card-header text-white">
+              Weather
+            </div>
+  <div class="card-body">
+    <h5 class="card-title text-white" id="weatherTitle"></h5>
+    <p class="card-text text-white" id="weatherDesc"></p>
+    <img class="weather-icon" id="weatherIcon" src="">
+    <p class="card-text"><small class="text-white" id="weatherTemp"></small></p>
+  </div>
+</div>
+
+<div class="column right">
+  <div class="video-container">
+    <iframe id="player" src="https://www.youtube.com/embed/videoseries?list=PLbpi6ZahtOH6XU6mcbUfozIiaCeyrhj1n&autoplay=1" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+            
+        
+      </div>
+      <div class="balloon-container"><div class="balloon"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
